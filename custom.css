@@ -1,0 +1,86 @@
+@font-face{
+    font-family:'Amsterdam' ;
+    src: url('AmsterdamOne-eZ12l.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #edfff7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #edfff7;
+    font-family: 'Amsterdam'
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+#img_oculos_laranja {
+    width: 100%;
+    height: auto; /* Mantém a proporção correta */
+    max-height: 900px; /* Evita que a imagem fique muito grande */
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#ft_enc_loja {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif; /* Muda a fonte do h3 */
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#coment_enc_loja {
+    font-size: 28px;
+    font-family: 'Times New Roman', serif; /* Muda a fonte do h2 */
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    
+}
+
+/* Estilização do botão */
+#btn_encont_loja {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+}
+
+/* Configuração para tornar o site responsivo */
+@media (max-width: 768px) { /* Aplica os estilos para telas menores que 768px */
+    nav {
+        flex-direction: column; /* Faz com que os botões fiquem empilhados */
+    }
+
+    .div_img_oculos_laranja {
+        position: relative; /* Remove o posicionamento absoluto */
+        top: auto; /* Permite que a posição seja definida automaticamente */
+        left: auto; /* Permite que a posição seja definida automaticamente */
+        transform: none; /* Remove a centralização forçada */
+        margin-top: 10px; /* Adiciona um pequeno espaço superior */
+    }
+}
